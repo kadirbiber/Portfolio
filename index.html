@@ -1,53 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kadir Biber Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kadir Biber | Portfolio</title>
+<link rel="stylesheet" href="./CSS/style.css">
 </head>
 <body>
+<header>
+<nav>
+<a class="logo" href="#home">KB</a>
+<button id="menuButton" aria-label="Open menu">☰</button>
+<div id="navLinks">
+<a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#contact">Contact</a>
+</div>
+</nav>
+</header>
 
-    <header>
-        <h1>Kadir Biber</h1>
-        <p>HTML and CSS Portfolio Website</p>
-    </header>
+<main>
+<section class="hero" id="home">
+<div>
+<p class="eyebrow">HTML • CSS • JavaScript</p>
+<h1>Hello, I'm <span>Kadir Biber</span></h1>
+<p>I create clean, responsive, and user-friendly websites while developing my front-end skills.</p>
+<a class="button" href="#projects">View My Projects</a>
+</div>
+</section>
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-    </nav>
+<section id="about">
+<h2>About Me</h2>
+<div class="card">
+<p>I am a web development student learning to build responsive websites with HTML, CSS, and JavaScript. My projects demonstrate page structure, styling, interactivity, GitHub organization, and deployment.</p>
+</div>
+</section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>
-            Welcome to my portfolio website. This website showcases my HTML, CSS, and Bootstrap projects completed during this course.
-        </p>
-    </section>
+<section id="skills" class="alt">
+<h2>Skills</h2>
+<div class="grid">
+<article class="card"><h3>HTML</h3><p>Semantic structure, forms, navigation, images, and embedded media.</p></article>
+<article class="card"><h3>CSS</h3><p>Responsive layouts, Flexbox, Grid, hover effects, and mobile design.</p></article>
+<article class="card"><h3>JavaScript</h3><p>DOM manipulation, events, menus, modals, and image galleries.</p></article>
+<article class="card"><h3>GitHub</h3><p>Repositories, project folders, commits, and GitHub Pages.</p></article>
+</div>
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<article class="card"><h3>Academy Cinemas</h3><p>A responsive cinema website built with HTML, CSS, and Bootstrap.</p></article>
+<article class="card"><h3>Simple Recipes</h3><p>A responsive recipe website with a student-created About section.</p></article>
+<article class="card"><h3>One-Page Website</h3><p>A one-page website with a functional JavaScript lightbox gallery.</p></article>
+<article class="card"><h3>CSS Effects</h3><p>A project demonstrating CSS transitions, layouts, and visual effects.</p></article>
+</div>
+</section>
 
-        <div class="project">
-            <h3>Academy Cinemas</h3>
-            <p>A Bootstrap movie theater website with a responsive layout and footer.</p>
-        </div>
+<section id="contact" class="alt">
+<h2>Contact</h2>
+<form id="contactForm" class="card">
+<label for="name">Name</label>
+<input id="name" required>
+<label for="email">Email</label>
+<input id="email" type="email" required>
+<label for="message">Message</label>
+<textarea id="message" rows="5" required></textarea>
+<button class="button" type="submit">Send Message</button>
+<p id="formMessage"></p>
+</form>
+</section>
+</main>
 
-        <div class="project">
-            <h3>Portfolio Website</h3>
-            <p>A basic personal portfolio website built with HTML and CSS.</p>
-        </div>
-    </section>
-
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: kadir@example.com</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2026 Kadir Biber. All Rights Reserved.</p>
-    </footer>
-
+<footer><p>&copy; <span id="year"></span> Kadir Biber. Built with HTML, CSS, and JavaScript.</p></footer>
+<button id="topButton" aria-label="Back to top">↑</button>
+<script src="./JS/script.js"></script>
 </body>
 </html>
